@@ -17,6 +17,7 @@
     0% {
         opacity: 0%;
     }
+
     100% {
         opacity: 100%;
     }
@@ -26,10 +27,15 @@
     animation: flick 1s ease-out infinite alternate-reverse;
 }
 
+.flick2 {
+    animation: flick 300ms linear infinite alternate-reverse;
+}
+
 @keyframes scroll {
     0% {
         transform: translateX(0px);
     }
+
     100% {
         transform: translateX(-355px);
     }
@@ -39,7 +45,7 @@
     animation: scroll 1s linear infinite;
 }
 
-@keyframes jump {
+@keyframes jump1 {
     0% {
         transform: translateX(8px) translateY(0px) rotate(5deg);
     }
@@ -54,8 +60,27 @@
 
 }
 
+@keyframes jump2 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
 .jump {
-    animation: jump 1s linear infinite alternate-reverse;
+    animation: jump1 500ms linear infinite alternate-reverse;
+}
+
+.jump2 {
+    animation: jump2 300ms ease-in-out infinite;
 }
 
 
@@ -88,19 +113,19 @@ body {
 }
 
 #logo {
-    width: clamp(300px,60vw,350px);
+    width: clamp(300px, 60vw, 350px);
     margin-top: 65px;
 }
 
 #aperte-espaco {
     text-align: center;
-    color: var(--cor1);
+    color: var(--cor7);
     font-size: 1.2rem;
 }
 
 #aperte-espaco em {
     color: var(--cor3);
-    text-shadow: 3px 3px var(--cor1);
+    text-shadow: 3px 3px var(--cor7);
     font-style: normal;
     font-size: 1.5rem;
 }
@@ -121,7 +146,7 @@ footer span a {
     position: absolute;
     z-index: 1;
     content: url(/Estudos/bene-rush/src/SVG/sound-off.svg);
-    width: 40px;
+    height: 40px;
     top: 15px;
     left: 15px;
     padding: 8px;
