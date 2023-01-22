@@ -144,7 +144,7 @@ footer span a {
 #sound {
     position: absolute;
     z-index: 1;
-    content: url(src/SVG/sound-off.svg);
+    content: url(../src/SVG/sound-off.svg);
     height: 40px;
     width: 40px;
     top: 15px;

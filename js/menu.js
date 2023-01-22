@@ -13,12 +13,12 @@ function music() {
 function playSound() {
     if (count == 0) {
         buttonSound.play();
-        sound.style.content = "url(src/SVG/sound-on.svg)";
+        sound.style.content = "url(../src/SVG/sound-on.svg)";
         setTimeout(music(), 500);
         count++;
     } else {
         buttonSound.play();
-        sound.style.content = "url(src/SVG/sound-off.svg)";
+        sound.style.content = "url(../src/SVG/sound-off.svg)";
         bgMusic.pause();
         count--;
     }
