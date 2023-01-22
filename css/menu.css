@@ -37,7 +37,7 @@
     }
 
     100% {
-        transform: translateX(-355px);
+        transform: translateX(-500px);
     }
 }
 
@@ -83,12 +83,10 @@
     animation: jump2 300ms ease-in-out infinite;
 }
 
-
-
 * {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 20px;
     font-family: 'Silkscreen', cursive;
 }
 
@@ -113,11 +111,12 @@ body {
 }
 
 #logo {
-    width: clamp(300px, 60vw, 350px);
-    margin-top: 65px;
+    width: clamp(275px, 50vw, 600px);
+    margin-top: 60px;
 }
 
 #aperte-espaco {
+    padding: 0px 40px;
     text-align: center;
     color: var(--cor7);
     font-size: 1.2rem;
@@ -147,6 +146,7 @@ footer span a {
     z-index: 1;
     content: url(/Estudos/bene-rush/src/SVG/sound-off.svg);
     height: 40px;
+    width: 40px;
     top: 15px;
     left: 15px;
     padding: 8px;
@@ -161,4 +161,20 @@ footer span a {
 #sound:active {
     background-color: var(--cor7);
     scale: 80%;
+}
+
+@media (max-width: 800px) {
+    @keyframes scroll {
+        0% {
+            transform: translateX(0px);
+        }
+    
+        100% {
+            transform: translateX(-355px);
+        }
+    }
+
+    * {
+        font-size: 16px;
+    }
 }

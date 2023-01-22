@@ -16,7 +16,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 16px;
     font-family: 'Silkscreen', cursive;
 }
 
@@ -31,8 +30,8 @@ body {
 }
 
 #conteiner {
-    width: 800px;
-    height: 500px;
+    width: 1100px;
+    height: 700px;
     background-color: var(--cor5);
     border-radius: 50px;
     box-shadow: 4px 4px 0px var(--cor7);
@@ -46,3 +45,9 @@ iframe {
     width: 100%;
 }
 
+@media (max-width: 1600px) {
+    #conteiner {
+        width: 800px;
+        height: 500px;
+    }
+}
