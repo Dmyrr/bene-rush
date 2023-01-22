@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+
+:root {
+    --cor1: #FB581E;
+    --cor2: #F4C13F;
+    --cor3: #E7F097;
+    --cor4: #65D366;
+    --cor5: #69C6AB;
+    --cor6: #70867C;
+    --cor7: #42564D;
+    --cor8: #181818;
+    --cor9: #f7f7f7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Silkscreen', cursive;
+}
+
+body {
+    overflow: hidden;
+}
+
+#bg {
+    position: absolute;
+    z-index: 0;
+    height: 100vh;
+}
+
+#menu {
+    position: relative;
+}
+
+#sound {
+    position: absolute;
+    z-index: 1;
+}

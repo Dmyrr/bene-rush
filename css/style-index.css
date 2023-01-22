@@ -9,6 +9,8 @@
     --cor5: #69C6AB;
     --cor6: #70867C;
     --cor7: #42564D;
+    --cor8: #181818;
+    --cor9: #f7f7f7;
 }
 
 * {
@@ -20,4 +22,26 @@
 
 body {
     min-height: 100vh;
+    background-image: url('/estudos/bene-rush/src/img/bg-animado.gif');
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
 }
+
+#conteiner {
+    width: 800px;
+    height: 500px;
+    background-color: var(--cor5);
+    border-radius: 50px;
+    box-shadow: 5px 5px 0px var(--cor8);
+    border: 8px solid var(--cor9);
+}
+
+iframe {
+    border-radius: 40px;
+    height: 100%;
+    width: 100%;
+}
+
