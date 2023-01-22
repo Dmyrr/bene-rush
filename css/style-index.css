@@ -21,7 +21,7 @@
 
 body {
     min-height: 100vh;
-    background-image: url('/estudos/bene-rush/src/img/bg-animado.webp');
+    background-image: url('src/img/bg-animado.webp');
     background-repeat: repeat;
     display: flex;
     justify-content: center;
