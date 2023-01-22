@@ -13,6 +13,53 @@
     --cor9: #f7f7f7;
 }
 
+@keyframes flick {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.flick {
+    animation: flick 1s ease-out infinite alternate-reverse;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-355px);
+    }
+}
+
+.scroll {
+    animation: scroll 1s linear infinite;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateX(8px) translateY(0px) rotate(5deg);
+    }
+
+    50% {
+        transform: translateX(0px) translateY(-8px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(-8px) translateY(0px) rotate(-5deg);
+    }
+
+}
+
+.jump {
+    animation: jump 1s linear infinite alternate-reverse;
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -22,9 +69,10 @@
 
 body {
     overflow: hidden;
+    user-select: none;
 }
 
-#bg {
+#bg img {
     position: absolute;
     z-index: 0;
     height: 100vh;
@@ -32,9 +80,60 @@ body {
 
 #menu {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+#logo {
+    width: clamp(300px,60vw,350px);
+    margin-top: 65px;
+}
+
+#aperte-espaco {
+    text-align: center;
+    color: var(--cor1);
+    font-size: 1.2rem;
+}
+
+#aperte-espaco em {
+    color: var(--cor3);
+    text-shadow: 3px 3px var(--cor1);
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+footer {
+    padding: 0px 40px;
+    text-align: center;
+    color: var(--cor7);
+}
+
+footer span a {
+    color: var(--cor3);
+    text-shadow: 2px 2px var(--cor7);
+    text-decoration: none;
 }
 
 #sound {
     position: absolute;
     z-index: 1;
+    content: url(/Estudos/bene-rush/src/SVG/sound-off.svg);
+    width: 40px;
+    top: 15px;
+    left: 15px;
+    padding: 8px;
+    border-radius: 20px;
+    transition: 100ms ease-out;
+}
+
+#sound:hover {
+    background-color: var(--cor6);
+}
+
+#sound:active {
+    background-color: var(--cor7);
+    scale: 80%;
 }
